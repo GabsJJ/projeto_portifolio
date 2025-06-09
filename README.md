@@ -26,13 +26,13 @@ Para visualizar o projeto localmente, siga as instruções abaixo:
 ### Passos
 
 1. Clone o repositório:
-	```bash
+   ```bash
    git clone https://github.com/GabsJJ/projeto_portifolio.git
-```
+ 
 2. Abra o projeto no Visual Studio Code:
    ```bash
    code projeto_porfifolio
-```
+
 3. No VSCode, abra um arquivo HTML do projeto (ex: `index.html`).
 4. Clique com o botão direito no editor e selecione **"Open with Live Server"**.  
    - Alternativamente, você pode iniciar o **Live Server** através da barra de status do VSCode.
