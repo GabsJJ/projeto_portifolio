@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <!-- Servidores de Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,7 +8,7 @@
 
     <!-- Fonte do Google - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio do Gabriel, desenvolvedor web frontend.">
@@ -20,11 +21,10 @@
 
     <title>Gabriel Julio - Portfólio</title>
 </head>
-<body>
 
+<body>
     <!-- Cabeçalho da página -->
     <header class="flex menu_container">
-
         <div id="header_content" class="menu_content">
             <!-- Título do cabeçalho -->
             <div id="titulo">
@@ -48,7 +48,6 @@
 
     <!-- Seção principal da página -->
     <main>
-
         <!-- Seção Home -->
         <section id="home" class="flex home_container">
 
@@ -69,26 +68,7 @@
         </section>
 
         <!-- Seção Sobre -->
-        <section id="about" class="flex sobre_container">
-
-            <!-- Imagem da seção Sobre -->
-            <img src="./assets/img/user_01.svg" alt="Foto do perfil do Github" />
-
-            <!-- Texto da seção Sobre -->
-            <article id="about_texto">
-                <h1>Sobre mim</h1>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Quem manda
-                    na minha terra sou euzis! A ordem dos tratores não altera o pão duris. Copo furadis é disculpa de
-                    bebadis, arcu quam euismod magna.</p>
-
-                <div id="about_github" class="flex sobre_github">
-                    <a href="https://github.com/GabsJJ" target="_blank" class="botao">Github</a>
-                    <p>200 seguidores</p>
-                    <p>20 repositórios</p>
-                </div>
-            </article>
-
-        </section>
+        <section id="about" class="flex sobre_container"></section>
 
         <!-- Seção de Contatos -->
         <section id="contact" class="contato_container">
@@ -116,7 +96,11 @@
             </article>
 
             <!-- Formulário de Contato -->
-            <form action="" method="POST">
+            <form action="https://formsubmit.co/1a2a5a5a2c8979e1d4cd9272b066b971" method="POST" id="formulario">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
+
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o seu nome">
                 <span id="txtNome"></span>
@@ -131,8 +115,7 @@
 
                 <label for="mensagem">Mensagem</label>
 
-                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem">
-                </textarea>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
 
                 <button class="botao" type="submit">Enviar</button>
             </form>
@@ -143,5 +126,7 @@
     <footer>
         Feito por Gabriel Julio - 2025
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
